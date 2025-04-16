@@ -2,8 +2,6 @@
 
 A modern, accessible, and feature-rich color picker component for React applications.
 
-![ColorForge Color Picker](https://via.placeholder.com/800x400/3b82f6/FFFFFF?text=ColorForge+Color+Picker)
-
 ## Features
 
 - 🎨 **Interactive Color Wheel** - Select colors visually using the intuitive color wheel UI
