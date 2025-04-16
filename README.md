@@ -29,11 +29,30 @@ pnpm add color-forge
 bun add color-forge
 ```
 
+### CSS/Tailwind Setup
+
+ColorForge requires Tailwind CSS. Add the following to your Tailwind configuration:
+
+```js
+// tailwind.config.js
+module.exports = {
+  // ...your existing config
+  content: [
+    // ...your content paths
+    "./node_modules/color-forge/**/*.{js,ts,jsx,tsx}",
+  ],
+  // ...rest of your config
+};
+```
+
 ## Basic Usage
 
 ```jsx
 import React, { useState } from "react";
 import { ColorPicker } from "color-forge";
+
+// Import the styles (if not using Tailwind)
+import "color-forge/dist/styles.css";
 
 const MyComponent = () => {
   const [color, setColor] = useState("#3B82F6");
@@ -251,15 +270,6 @@ const rgbFromHsl = hslToRgb({ h: 217, s: 91, l: 60 });
 // Validate and generate colors
 const isValid = isValidHex("#3B82F6");
 const randomColor = randomHexColor();
-```
-
-## Development
-
-To start the development server:
-
-```bash
-bun install
-bun run dev
 ```
 
 ## Contributing
