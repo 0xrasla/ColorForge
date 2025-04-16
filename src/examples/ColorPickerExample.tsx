@@ -30,7 +30,6 @@ const ColorPickerExample: React.FC = () => {
           <h2 className="text-lg font-medium mb-4">Selected Color</h2>
           {currentColor ? (
             <div className="space-y-4">
-              {/* Color Preview */}
               <div className="flex gap-3 items-center">
                 <div
                   className="w-12 h-12 rounded-md border shadow-inner"

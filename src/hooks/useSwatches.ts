@@ -83,7 +83,6 @@ export const useSwatches = (
     [enableSaving, maxSaved]
   );
 
-  // Remove a custom swatch by index
   const removeSwatch = useCallback(
     (index: number) => {
       if (!enableSaving || index < 0 || index >= savedSwatches.length) return;
